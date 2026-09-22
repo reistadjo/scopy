@@ -1,0 +1,61 @@
+{
+    "baseplugin": false,
+    "plugin_name": "neponset",
+    "plugin_display_name": "Neponset",
+    "plugin_description": "Plugin for the Neponset RF up/down converter module",
+    "class_name": "NeponsetPlugin",
+    "namespace": "scopy::neponset",
+    "device_category": "iio",
+    "tools": [
+        {
+            "id": "neponsetSystemTool",
+            "tool_name": "Neponset",
+            "file_name": "neponsetsystem",
+            "class_name": "NeponsetSystem",
+            "namespace": "scopy::neponset"
+        },
+        {
+            "id": "neponsetRxTool",
+            "tool_name": "Neponset RX",
+            "file_name": "neponsetrx",
+            "class_name": "NeponsetRx",
+            "namespace": "scopy::neponset"
+        },
+        {
+            "id": "neponsetTxTool",
+            "tool_name": "Neponset TX",
+            "file_name": "neponsettx",
+            "class_name": "NeponsetTx",
+            "namespace": "scopy::neponset"
+        },
+        {
+            "id": "neponsetLoTool",
+            "tool_name": "Neponset LO",
+            "file_name": "neponsetlo",
+            "class_name": "NeponsetLo",
+            "namespace": "scopy::neponset"
+        }
+    ],
+    "cmakelists": {
+        "cmake_min_required": 3.9,
+        "cxx_standard": 17,
+        "enable_testing": "ON"
+    },
+    "style": {
+        "qss": false,
+        "json": false
+    },
+    "test": {
+        "cmakelists": true,
+        "cmake_min_required": 3.5,
+        "tst_pluginloader": true
+    },
+    "resources": {
+        "resources_qrc": true
+    },
+    "doc": true,
+    "pdk": {
+        "deps_path": "",
+        "project_path": ""
+    }
+}
